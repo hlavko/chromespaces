@@ -1,0 +1,818 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"crawl",
+				"crawlId"
+			],
+			[
+				"curre",
+				"currentCrawlId"
+			],
+			[
+				"new",
+				"newCrawlId"
+			],
+			[
+				"lan",
+				"langId"
+			],
+			[
+				"min",
+				"min_size"
+			],
+			[
+				"rest",
+				"rects_count"
+			],
+			[
+				"rects",
+				"rects_count"
+			],
+			[
+				"extras",
+				"extrasA"
+			],
+			[
+				"extra",
+				"extraB"
+			],
+			[
+				"ext",
+				"extrasA"
+			],
+			[
+				"mysql",
+				"mysql_query"
+			],
+			[
+				"define",
+				"defined"
+			],
+			[
+				"r",
+				"req1	require_once …"
+			],
+			[
+				"req",
+				"require_once"
+			],
+			[
+				"tribal",
+				"tribalFlower"
+			],
+			[
+				"tro",
+				"tribalDragon"
+			],
+			[
+				"post",
+				"post_type"
+			],
+			[
+				"is",
+				"is_enabled"
+			],
+			[
+				"Pose2",
+				"Pose2Boobs"
+			],
+			[
+				"PoseB",
+				"Pose1Boobs"
+			],
+			[
+				"ass",
+				"assertTrue"
+			],
+			[
+				"craw",
+				"crawlId"
+			],
+			[
+				"colli",
+				"checkCollisionsWithCircles"
+			],
+			[
+				"gee",
+				"generateRandomPosition"
+			],
+			[
+				"bounce",
+				"bounceVector"
+			],
+			[
+				"geenr",
+				"generateRandomColor"
+			],
+			[
+				"circles",
+				"circlesNum"
+			],
+			[
+				"radius",
+				"radiusChange"
+			],
+			[
+				"generate",
+				"generateRandomPosition"
+			],
+			[
+				"circle",
+				"circle1"
+			],
+			[
+				"radiu",
+				"radiusMin"
+			],
+			[
+				"gener",
+				"generateRandomColor"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"slide",
+				"slideUp"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "form.html",
+			"settings":
+			{
+				"buffer_size": 634,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 35.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sublime",
+				"SublimeLint: Next Error"
+			],
+			[
+				"actio",
+				"Set Syntax: ActionScript"
+			],
+			[
+				"action",
+				"Set Syntax: ActionScript"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"au",
+				"Auto indent"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"inden",
+				"Indent XML"
+			],
+			[
+				"auto",
+				"Auto indent"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 522.0
+	},
+	"console":
+	{
+		"height": 296.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/hlavko/workspace/chromespaces/popup.js",
+		"/C/Users/hlavko/Desktop/popup.js",
+		"/C/Users/hlavko/Desktop/popup.html",
+		"/C/hlavko/workspace/evalua/evaluaweb/app.js",
+		"/C/hlavko/workspace/evalua/evaluaweb/server.js",
+		"/C/hlavko/workspace/evalua/evalua-website/.gitignore",
+		"/C/Users/hlavko/AppData/Local/Temp/_tc/evalua-web/package.json",
+		"/C/hlavko/workspace/evalua/evaluaweb/package.json",
+		"/C/hlavko/wants.txt",
+		"/C/hlavko/workspace/evalua/evalua-web/.gitignore",
+		"/C/hlavko/workspace/evalua/web_/app.js",
+		"/C/hlavko/workspace/evalua/web/static/graph.js",
+		"/C/hlavko/workspace/evalua/web/views/index.html",
+		"/C/hlavko/workspace/evalua/web/app.js",
+		"/C/hlavko/workspace/evalua/mining/miner.py",
+		"/C/hlavko/workspace/evalua/web/package.json",
+		"/C/hlavko/workspace/evalua/web/static/style.css",
+		"/C/hlavko/workspace/evalua/web/static/table_jui.css",
+		"/C/hlavko/workspace/evalua/web/static/jquery.dataTables.min.js",
+		"/C/hlavko/workspace/evalua/web/static/jquery.min.js",
+		"/C/hlavko/workspace/evalua/web/index.js",
+		"/C/hlavko/workspace/index.php",
+		"/C/hlavko/workspace/evalua2/website/index.php",
+		"/C/hlavko/workspace/evalua2/mining/search_data/langs.dat",
+		"/C/hlavko/workspace/evalua2/mining/miner.py",
+		"/C/hlavko/workspace/evalua2/mining/googleapi.py",
+		"/C/hlavko/workspace/evalua2/mining/update_scripts/remove_items_from_db.py",
+		"/C/hlavko/workspace/doc/seria.txt",
+		"/C/hlavko/workspace/evalua2/mining/search_data/google-profesia-sk.dat",
+		"/C/hlavko/workspace/evalua2/mining/search_data/google-fiit-sk.dat",
+		"/C/hlavko/workspace/evalua2/mining/search_data/stats.dat",
+		"/C/hlavko/workspace/evalua2/mining/search_data/data.dat",
+		"/C/hlavko/workspace/evalua2/mining/search_data/data",
+		"/C/hlavko/workspace/evalua2/mining/update_scripts/remove_all_documents.py",
+		"/C/hlavko/workspace/euler/prob0067_triangle.txt",
+		"/C/hlavko/workspace/evalua2/mining/dbase.py",
+		"/C/hlavko/workspace/evalua2/mining/googlesearch.py",
+		"/C/hlavko/workspace/topcoder/topcoder.sublime-project",
+		"/C/hlavko/workspace/evalua/wsgi/miner.py",
+		"/C/hlavko/workspace/evalua/wsgi/search_data/google-karriere.at.dat",
+		"/C/hlavko/workspace/evalua/wsgi/search_data/google-profesia-sk.dat",
+		"/C/hlavko/workspace/evalua/wsgi/search_data/google-jobs-cz.dat",
+		"/C/hlavko/workspace/evalua/wsgi/search_data/google-fiit-sk.dat",
+		"/C/hlavko/workspace/evalua/wsgi/search_data/stats.dat",
+		"/C/hlavko/workspace/evalua/wsgi/application",
+		"/H/work/info.txt",
+		"/C/hlavko/workspace/evalua/wsgi/search_data/google-sk.dat",
+		"/C/hlavko/workspace/evalua/wsgi/search_data/google-at.dat",
+		"/C/hlavko/workspace/evalua/wsgi/update_scripts/add_langs_to_db.py",
+		"/C/hlavko/workspace/evalua/wsgi/update_scripts/add_crawlid_to_db_items.py",
+		"/C/hlavko/workspace/evalua/wsgi/update_scripts/update_lang_relations_in_stats.py",
+		"/C/hlavko/workspace/evalua/wsgi/update_scripts/remove_items_from_db.py",
+		"/C/hlavko/workspace/evalua/wsgi/search_data/data",
+		"/C/hlavko/workspace/evalua/wsgi/conf/db.txt",
+		"/C/hlavko/workspace/evalua/wsgi/update_scripts/add_property_to_db_item.py",
+		"/C/hlavko/workspace/evalua/app.py",
+		"/C/hlavko/workspace/evalua/setup.py",
+		"/E/backlog.txt",
+		"/C/hlavko/plan.txt",
+		"/C/hlavko/tags.txt",
+		"/E/games/games.txt",
+		"/H/training.txt",
+		"/E/tags.txt",
+		"/E/plan.txt",
+		"/E/logger.txt",
+		"/E/learn/filesystem_tutorial.txt",
+		"/C/hlavko/workspace/topcoder/srm602/third.py",
+		"/C/hlavko/workspace/topcoder/srm602/test.py",
+		"/C/hlavko/workspace/topcoder/srm602/second.py",
+		"/C/hlavko/workspace/topcoder/srm602/first.py",
+		"/C/hlavko/workspace/topcoder/srm601/second.py",
+		"/C/hlavko/workspace/topcoder/srm601/first.py",
+		"/C/hlavko/workspace/topcoder/srm601/third.py",
+		"/C/Users/hlavko/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/hlavko/Desktop/stylesheet.css",
+		"/C/Users/hlavko/Desktop/wp-config.php",
+		"/C/Users/hlavko/Desktop/wp-katalog.php",
+		"/C/Users/hlavko/AppData/Local/Temp/_tc/admin.php",
+		"/C/Users/hlavko/AppData/Local/Temp/_tc/wp-login.php",
+		"/C/Users/hlavko/AppData/Local/Temp/_tc/wp-load.php",
+		"/C/wamp/www/plavba/wp-content/plugins/wp-katalog/wp-katalog.php",
+		"/C/wamp/www/plavba/wp-content/languages/sk_SK.po",
+		"/C/Users/hlavko/AppData/Local/Temp/_tc_/wp-config.php",
+		"/C/wamp/www/plavba/wp-content/themes/montezuma/languages/montezuma.pot",
+		"/C/wamp/www/plavba/wp-content/languages/sk_SK.mo",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/plugins/wp-catalogue/wpc-catalogue.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/plugins/wp-katalog/uninstall.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/plugins/wp-katalog/wp-katalog.php",
+		"/C/wamp/www/plavba/wp-config.php",
+		"/C/wamp/www/plavby/wp-content/themes/montezuma/functions.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/plugins/wp-katalog/katalog.php",
+		"/C/Users/hlavko/Desktop/442272 Code Downloads/Chapter 8 Code/prowp2-settings-api-plugin.php",
+		"/C/Users/hlavko/Desktop/442272 Code Downloads/Chapter 8 Code/uninstall.php",
+		"/C/Users/hlavko/Desktop/442272 Code Downloads/Chapter 8 Code/halloween-store.php",
+		"/C/Users/hlavko/Desktop/442272 Code Downloads/Code README.txt",
+		"/E/learn/wordpress_docs.txt",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/plugins/wp-catalogue/themefiles/taxonomy-wpccategories.php",
+		"/C/wamp/www/plavby/wp-content/plugins/wp-catalogue/wpc-catalogue.php",
+		"/C/wamp/www/plavby/wp-includes/functions.php",
+		"/C/wamp/www/plavby/wp-includes/wp-db.php",
+		"/E/music_download.txt",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/includes/template_tags.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/includes/get_template_part.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/includes/get_virtual_template.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-includes/template-loader.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/index.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/includes/content_nav.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/readme.txt",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/header.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/head.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/functions.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/footer.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/default.mo",
+		"/C/hlavko/workspace/plavba/plavby/index.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-content/themes/montezuma/includes/get_used_templates.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-blog-header.php",
+		"/C/hlavko/workspace/plavba/plavby/wp-load.php",
+		"/C/wamp/www/plavby/wp-includes/query.php",
+		"/C/wamp/www/plavby/wp-config.php",
+		"/E/games_picker.py",
+		"/E/games.txt",
+		"/H/pass.txt",
+		"/C/hlavko/workspace/lula/trunk4/src/flash/Lula/bin/assets/room_composition.xml",
+		"/C/hlavko/workspace/lula/trunk4/src/flash/skeleton_anims_designer/bin/config.xml",
+		"/C/hlavko/workspace/lula/trunk4/src/flash/Lula/bin/assets/animator/items.xml",
+		"/C/hlavko/workspace/lula/trunk4/data/outfit.xml",
+		"/E/random_picker.py",
+		"/C/wamp/www/plavby/wp-blog-header.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console.",
+			"cache",
+			"renderMainChart",
+			"graphcontainer3",
+			"langs",
+			"query",
+			"filltable",
+			"render",
+			"renderMainChart",
+			"fillTable",
+			" site:.profesia.sk",
+			" 2014",
+			"180",
+			"get_results_num",
+			"proxy",
+			"actual",
+			".profesia.sk",
+			".sk",
+			"programovanie",
+			"2013",
+			"cz",
+			"'crawlId': 2",
+			"crawlid': 10",
+			"crawlid': 4",
+			"crawlid': 3",
+			"print",
+			"keys",
+			"border",
+			"boreder",
+			"require(",
+			"read more",
+			"najnov",
+			"[wp-catalogue]",
+			"register",
+			"montezuma",
+			"header.php",
+			"subtemplate-footer",
+			"'template_redirect'",
+			"do_action( 'template_redirect' );\ndo_action( 'template_redirect' );\ndo_action( 'template_redirect' );\n'template_redirect'",
+			"function bfa_loop(",
+			"function bfa_get_virtual_template",
+			"function do_action",
+			"do_action",
+			"loop content",
+			"//loop content",
+			"class WP_Query",
+			"WP_Query",
+			"parse_query",
+			"photo",
+			"lulameter",
+			"pose2_tattoo_arm_attention2",
+			"\n        <slot id=\"pose2_tattoo_arm_attention2\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>\n        <slot id=\"pose2_tattoo_arm_attention3\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"staffmodel23",
+			"dressroom_button_label",
+			"opendress",
+			"\"randomLilly\"",
+			">\n	</item>",
+			"\"product\"",
+			"boost",
+			"s01ch01",
+			"s01ch01m01_lock",
+			"s01ch01m01_fin",
+			"\"art\"",
+			"<slot id=\"pose7_tattoo_hips\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_pircing_stomach\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_foot\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_hand3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_hand2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_hand1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_boobs\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_arm3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_arm2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_arm1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_botox_mouth3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_botox_mouth2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_botox_mouth1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_head3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_head2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_head1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_arm3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_arm2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_arm1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hand3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hand2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hand1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hips3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hips2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hips1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_stomach3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_stomach2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_stomach1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_boobs3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_boobs2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_boobs1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_foot3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_foot2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_foot1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_botox_mouth4\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_botox_mouth3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_botox_mouth2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_botox_mouth1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_head3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_head2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_head1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_arm3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_arm2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_arm1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hand3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hand2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hand1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hips3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hips2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hips1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_stomach3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_stomach2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_stomach1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_boobs3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_boobs2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_boobs1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_foot3\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_foot2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_foot1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_botox_mouth_sex2\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_botox_mouth_sex1\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_pircing_head_sex\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_arm_sex\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_hand_sex\" type=\"art\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_boobs_sex3\" type=\"art\" part=\"EMPTY\"/>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			".karriere.at",
+			".jobs.cz",
+			".at",
+			"programmierung",
+			"2014",
+			"",
+			"\"randomLily\"",
+			"/>\n	</item>",
+			"<slot id=\"pose7_tattoo_hips\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_pircing_stomach\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_foot\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_hand3\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_hand2\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_hand1\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_boobs\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_arm3\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_arm2\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose7_tattoo_arm1\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_botox_mouth3\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_botox_mouth2\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_botox_mouth1\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_head3\" type=\"piercing_head\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_head2\" type=\"piercing_head\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_head1\" type=\"piercing_head\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_arm3\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_arm2\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_arm1\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hand3\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hand2\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hand1\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hips3\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hips2\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_hips1\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_stomach3\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_stomach2\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_pircing_stomach1\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_boobs3\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_boobs2\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_boobs1\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_foot3\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_foot2\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose6_tattoo_foot1\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_botox_mouth4\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_botox_mouth3\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_botox_mouth2\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_botox_mouth1\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_head3\" type=\"piercing_head\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_head2\" type=\"piercing_head\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_head1\" type=\"piercing_head\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_arm3\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_arm2\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_arm1\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hand3\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hand2\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hand1\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hips3\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hips2\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_hips1\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_stomach3\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_stomach2\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_pircing_stomach1\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_boobs3\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_boobs2\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_boobs1\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_foot3\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_foot2\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose5_tattoo_foot1\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_botox_mouth_sex2\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_botox_mouth_sex1\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_pircing_head_sex\" type=\"piercing_head\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_arm_sex\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_hand_sex\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_boobs_sex3\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_boobs_sex2\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_boobs_sex1\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_hips_sex\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_pircing_stomach_sex\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_foot_sex\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_botox_mouth2\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_botox_mouth1\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_pircing_head\" type=\"piercing_head\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_arm\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_hand\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_boobs\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_hips\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_pircing_stomach\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose4_tattoo_foot\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose3_tattoo_arm\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose3_tattoo_hand\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose3_botox_mouth\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose3_pircing_head\" type=\"piercing_head\" part=\"EMPTY\"/>",
+			"<slot id=\"pose3_tattoo_boobs\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose3_tattoo_hips\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose3_pircing_stomach\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose3_tattoo_foot2\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose3_tattoo_foot1\" type=\"tattoo_foot\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_whip2\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_whip1\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_whip2\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_whip1\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_kiss2\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_kiss1\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_kiss2\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_kiss1\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_boobs3\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_boobs2\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_boobs1\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_boobs3\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_boobs2\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_boobs1\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_boobs_boobs3\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_boobs_boobs2\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_boobs_boobs1\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_normal\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_normal\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_attention3\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_attention2\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_arm_attention1\" type=\"tattoo_shoulder\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_attention3\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_attention2\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hand_attention1\" type=\"tattoo_hand\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_botox_mouth\" type=\"botox\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_pircing_head\" type=\"piercing_head\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_boobs_attention\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_hips\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_pircing_stomach\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
+			"<slot id=\"pose2_tattoo_foot\" type=\"tattoo_foot\" part=\"EMPTY\"/>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "form.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 221.0
+	},
+	"project": "chromespaces.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"function",
+				"plavby\\wp-content\\themes\\montezuma\\functions.php"
+			],
+			[
+				"func",
+				"plavby\\wp-includes\\functions.php"
+			],
+			[
+				"wpdb",
+				"plavby\\wp-includes\\wp-db.php"
+			],
+			[
+				"query",
+				"plavby\\wp-includes\\query.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
