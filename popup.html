@@ -7,6 +7,10 @@
         min-width: 357px;
         overflow-x: hidden;
       }
+
+      .opened{
+        font-weight: bold;
+      }
     </style>
 
     <script src="jquery.min.js"></script>
@@ -15,12 +19,13 @@
   <body>
     <div id="tabDefault">
       <div id="list"></div>
-      <div id="save">Save Workspace</div>
+      <div id="create">Create Workspace</div>
+      <div id="close">Close Workspace</div>
     </div>
     <div id="tabSave">
       <form name="input">
         Workspace Name: <input type="text" id="workspaceName">
-        <input id="submit" type="submit" value="Submit">
+        <div id="submit">Submit</div>
       </form>
     </div>
 

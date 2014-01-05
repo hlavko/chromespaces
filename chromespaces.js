@@ -1,12 +1,28 @@
 $(function() {
-
 	updateList();
 
 	$("#tabSave").hide();
 
-	$("#save").click(function() {
+	if (localStorage["openedWorkspace"] == undefined){
+		$("#create").show();
+		$("#close").hide();
+	}
+	else{
+		$("#create").hide();
+		$("#close").show();
+	}
+
+
+	$("#create").click(function() {
 		$("#tabDefault").hide();
 		$("#tabSave").show();
+	});
+
+	$("#close").click(function() {
+		closeWorkspace();
+
+		$("#create").show();
+		$("#close").hide();
 	});
 
 	$('#submit').click(function() {
@@ -14,23 +30,27 @@ $(function() {
 		$("#tabSave").hide();
 
 		var name = $("#workspaceName").val();
-		saveCurrentWorkspace(name);
+		createWorkspace(name);
 		
-	}); 
+		$("#create").hide();
+		$("#close").show();
+	});
 });
 
 function updateList(){
-	console.log(localStorage);
 	$("#list").html('');
 
-	for (key in localStorage){	
+	for (key in localStorage){
 		if (key.indexOf("workspace_") != -1){
 
 			var name = key.replace("workspace_", "");
 
-			var item = $("<div>" + key.replace("workspace_", "") +  "</div>").click(function(){
+			var item = $("<div>" + name +  "</div>").click(function(){
 				openWorkspace(name);
 			});
+
+			if (localStorage["openedWorkspace"] == name)
+				item.addClass("opened");
 
 			var removeButton = $("<div>remove</div>").click(function(){
 				removeWorkspace(name);
@@ -43,11 +63,26 @@ function updateList(){
 }
 
 function openWorkspace(name){
-	var workspaceUrls = localStorage["workspace_" + name].split(",")
+	localStorage["openedWorkspace"] = name;
+
+	closeAllWindows();
+
+	var workspaceUrls = JSON.parse(localStorage["workspace_" + name]);
 	chrome.windows.create({"url":workspaceUrls});
 }
 
-function saveCurrentWorkspace(name){
+function createWorkspace(name){
+	localStorage["openedWorkspace"] = name;
+
+	saveCurrentWorkspace();
+}
+
+function saveCurrentWorkspace(){
+	if (localStorage["openedWorkspace"] == undefined)
+		return;
+
+	var currentWorkspaceName = localStorage["openedWorkspace"];
+
 	var openedTabsUrls = [];
 
 	chrome.tabs.query({}, function(tabs){
@@ -55,11 +90,34 @@ function saveCurrentWorkspace(name){
 			openedTabsUrls.push(tabs[i].url);
 		}
 
-		localStorage["workspace_" + name] = openedTabsUrls;
+		localStorage["workspace_" + currentWorkspaceName] = JSON.stringify(openedTabsUrls);
+
+		updateList();
 	});
 }
 
 function removeWorkspace(name){
+	console.log("remove workspace");
 	delete localStorage["workspace_" + name];
+
+	if (localStorage["openedWorkspace"] == name)
+		closeWorkspace();
+
 	updateList();
+}
+
+function closeWorkspace(){
+	delete localStorage["openedWorkspace"];
+
+	closeAllWindows();
+
+	chrome.windows.create({});
+}
+
+function closeAllWindows(){
+	chrome.windows.getAll({},function(windows){
+		for (var i=0; i < windows.length; i++){
+			chrome.windows.remove(windows[i].id);
+		}
+	});
 }
