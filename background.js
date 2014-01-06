@@ -13,6 +13,7 @@ $(function() {
 
 	chrome.windows.onCreated.addListener(function(window){
 		saveCurrentWorkspace();
+		chrome.windows.update(window.id,{state: "maximized"})
 	});
 
 	chrome.windows.onRemoved.addListener(function(windowId){
