@@ -45,12 +45,18 @@ function updateList(){
 
 			var name = key.replace("workspace_", "");
 
-			var item = $("<div>" + name +  "</div>").click(function(){
-				openWorkspace(name);
-			});
+			var item = $("<div id='" + name +"'>" + name +  "</div>");
 
 			if (localStorage["openedWorkspace"] == name)
 				item.addClass("opened");
+			else{
+				var openButton = $("<div>open</div>").click(function(){
+					var name = $(this).parent().attr("id");
+					openWorkspace(name);
+				});
+
+				item.append(openButton);
+			}
 
 			var removeButton = $("<div>remove</div>").click(function(){
 				removeWorkspace(name);
@@ -97,7 +103,6 @@ function saveCurrentWorkspace(){
 }
 
 function removeWorkspace(name){
-	console.log("remove workspace");
 	delete localStorage["workspace_" + name];
 
 	if (localStorage["openedWorkspace"] == name)

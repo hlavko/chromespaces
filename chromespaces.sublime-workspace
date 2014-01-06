@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"save",
+				"saveCurrentWorkspace"
+			],
+			[
+				"wind",
+				"windowId"
+			],
+			[
+				"close",
+				"closeAllWindows"
+			],
+			[
+				"window",
+				"windowsMap"
+			],
+			[
+				"windo",
+				"windowsMap"
+			],
+			[
 				"remove",
 				"removeWorkspace"
 			],
@@ -163,7 +183,7 @@
 			"file": "popup.html",
 			"settings":
 			{
-				"buffer_size": 589,
+				"buffer_size": 669,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,23 +191,15 @@
 			"file": "chromespaces.js",
 			"settings":
 			{
-				"buffer_size": 1276,
+				"buffer_size": 2328,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "manifest.json",
+			"file": "background.js",
 			"settings":
 			{
-				"buffer_size": 242,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/hlavko/workspace/evalua/evaluaweb/static/graph.js",
-			"settings":
-			{
-				"buffer_size": 2864,
+				"buffer_size": 696,
 				"line_ending": "Windows"
 			}
 		}
@@ -308,6 +320,10 @@
 	},
 	"file_history":
 	[
+		"/C/hlavko/workspace/chromespaces/manifest.json",
+		"/C/hlavko/workspace/chromespaces/background.html",
+		"/C/hlavko/workspace/chromespaces/background_page.html",
+		"/C/hlavko/workspace/evalua/evaluaweb/static/graph.js",
 		"/C/hlavko/workspace/chromespaces/form.html",
 		"/C/hlavko/workspace/chromespaces/jquery.min.js",
 		"/C/hlavko/workspace/chromespaces/popup.js",
@@ -431,11 +447,7 @@
 		"/C/wamp/www/plavby/wp-config.php",
 		"/E/games_picker.py",
 		"/E/games.txt",
-		"/H/pass.txt",
-		"/C/hlavko/workspace/lula/trunk4/src/flash/Lula/bin/assets/room_composition.xml",
-		"/C/hlavko/workspace/lula/trunk4/src/flash/skeleton_anims_designer/bin/config.xml",
-		"/C/hlavko/workspace/lula/trunk4/src/flash/Lula/bin/assets/animator/items.xml",
-		"/C/hlavko/workspace/lula/trunk4/data/outfit.xml"
+		"/H/pass.txt"
 	],
 	"find":
 	{
@@ -454,6 +466,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"saveCurrentWorkspace",
+			"#save",
+			"windowsMap",
+			"window.windowsMap",
 			"console.",
 			"cache",
 			"renderMainChart",
@@ -577,11 +593,7 @@
 			"<slot id=\"pose5_tattoo_foot2\" type=\"art\" part=\"EMPTY\"/>",
 			"<slot id=\"pose5_tattoo_foot1\" type=\"art\" part=\"EMPTY\"/>",
 			"<slot id=\"pose4_botox_mouth_sex2\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose4_botox_mouth_sex1\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose4_pircing_head_sex\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose4_tattoo_arm_sex\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose4_tattoo_hand_sex\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose4_tattoo_boobs_sex3\" type=\"art\" part=\"EMPTY\"/>"
+			"<slot id=\"pose4_botox_mouth_sex1\" type=\"art\" part=\"EMPTY\"/>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -589,6 +601,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"windowsMap",
 			"",
 			".karriere.at",
 			".jobs.cz",
@@ -715,8 +728,7 @@
 			"<slot id=\"pose2_pircing_head\" type=\"piercing_head\" part=\"EMPTY\"/>",
 			"<slot id=\"pose2_tattoo_boobs_attention\" type=\"tattoo_boobs\" part=\"EMPTY\"/>",
 			"<slot id=\"pose2_tattoo_hips\" type=\"tattoo_hips\" part=\"EMPTY\"/>",
-			"<slot id=\"pose2_pircing_stomach\" type=\"piercing_stomach\" part=\"EMPTY\"/>",
-			"<slot id=\"pose2_tattoo_foot\" type=\"tattoo_foot\" part=\"EMPTY\"/>"
+			"<slot id=\"pose2_pircing_stomach\" type=\"piercing_stomach\" part=\"EMPTY\"/>"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -727,7 +739,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -736,15 +748,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 589,
+						"buffer_size": 669,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								323,
-								323
+								0,
+								669
 							]
 						],
 						"settings":
@@ -869,15 +881,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1276,
+						"buffer_size": 2328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1122,
-								1122
+								1321,
+								1321
 							]
 						],
 						"settings":
@@ -989,26 +1001,26 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 119.0,
+						"translation.y": 810.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "manifest.json",
+					"file": "background.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 242,
+						"buffer_size": 696,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								131,
-								131
+								453,
+								453
 							]
 						],
 						"settings":
@@ -1117,36 +1129,8 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/hlavko/workspace/evalua/evaluaweb/static/graph.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2864,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14,
-								14
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
