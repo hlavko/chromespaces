@@ -2,30 +2,32 @@
 <html>
   <head>
     <title>Chromespaces</title>
-    <style>
-      body {
-        min-width: 357px;
-        overflow-x: hidden;
-      }
-
-      .opened{
-        font-weight: bold;
-      }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
     <script src="jquery.min.js"></script>
     <script src="chromespaces.js"></script>
   </head>
   <body>
     <div id="tabDefault">
-      <div id="list"></div>
-      <div id="create">Create Workspace</div>
-      <div id="close">Close Workspace</div>
+      <table id="list" class="pure-table">
+        <thead>
+          <tr>
+            <th>Workspace</th>
+            <th>Toggle</th>
+            <th>Manage</th>
+            <th>Tabs</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="create"><a href="javascript:void(0)">Add workspace...</a></div>
     </div>
     <div id="tabSave">
       <form name="input">
-        Workspace Name: <input type="text" id="workspaceName">
-        <div id="submit">Submit</div>
+          <label for="workspaceName">
+              Name: <input type="text" placeholder="workspace" id="workspaceName">
+          </label>
+
+          <input type="submit" value="Add" id="submit">
       </form>
     </div>
 

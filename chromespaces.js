@@ -1,28 +1,12 @@
 $(function() {
 	updateList();
+	updateMenu();
 
 	$("#tabSave").hide();
 
-	if (localStorage["openedWorkspace"] == undefined){
-		$("#create").show();
-		$("#close").hide();
-	}
-	else{
-		$("#create").hide();
-		$("#close").show();
-	}
-
-
-	$("#create").click(function() {
+	$("#create a").click(function() {
 		$("#tabDefault").hide();
 		$("#tabSave").show();
-	});
-
-	$("#close").click(function() {
-		closeWorkspace();
-
-		$("#create").show();
-		$("#close").hide();
 	});
 
 	$('#submit').click(function() {
@@ -33,37 +17,58 @@ $(function() {
 		createWorkspace(name);
 		
 		$("#create").hide();
-		$("#close").show();
 	});
 });
 
+function updateMenu(){
+	if (localStorage["openedWorkspace"] == undefined)
+		$("#create").show();
+	else
+		$("#create").hide();
+}
+
 function updateList(){
-	$("#list").html('');
+	$("#list tbody").html('');
 
 	for (key in localStorage){
 		if (key.indexOf("workspace_") != -1){
 
 			var name = key.replace("workspace_", "");
 
-			var item = $("<div id='" + name +"'>" + name +  "</div>");
+			var row = $("<tr id='" + name + "'></tr>");
+			var colName = $("<td>" + name +  "</td>");
+			row.append(colName);
 
-			if (localStorage["openedWorkspace"] == name)
-				item.addClass("opened");
+			if (localStorage["openedWorkspace"] == name){
+				row.addClass("opened");
+
+				var closeCol = $("<td><a href='javascript:void(0)'>close</a></td>").click(function(){
+					closeWorkspace();
+				});
+
+				row.append(closeCol);
+			}
 			else{
-				var openButton = $("<div>open</div>").click(function(){
+				var openCol = $("<td><a href='javascript:void(0)'>open</a></td>").click(function(){
 					var name = $(this).parent().attr("id");
 					openWorkspace(name);
 				});
 
-				item.append(openButton);
+				row.append(openCol);
 			}
 
-			var removeButton = $("<div>remove</div>").click(function(){
+			var removeCol= $("<td><a href='javascript:void(0)'>remove</a></td>").click(function(){
+				var name = $(this).parent().attr("id");
 				removeWorkspace(name);
 			});
 
-			item.append(removeButton);
-			$("#list").append(item);
+			row.append(removeCol);
+
+			var tabsCount = JSON.parse(localStorage[key]).length;
+			var tabsCol = $("<td>" + tabsCount + "</td>");
+			row.append(tabsCol);
+
+			$("#list tbody").append(row);
 		}
 	}
 }
@@ -80,26 +85,11 @@ function openWorkspace(name){
 function createWorkspace(name){
 	localStorage["openedWorkspace"] = name;
 
-	saveCurrentWorkspace();
-}
-
-function saveCurrentWorkspace(){
-	if (localStorage["openedWorkspace"] == undefined)
-		return;
-
-	var currentWorkspaceName = localStorage["openedWorkspace"];
-
-	var openedTabsUrls = [];
-
-	chrome.tabs.query({}, function(tabs){
-		for (var i = 0; i < tabs.length; i++){
-			openedTabsUrls.push(tabs[i].url);
-		}
-
-		localStorage["workspace_" + currentWorkspaceName] = JSON.stringify(openedTabsUrls);
-
-		updateList();
+	chrome.runtime.sendMessage({type: "save"}, function(response) {
+  		console.log(response)
 	});
+
+	updateList();
 }
 
 function removeWorkspace(name){
@@ -125,4 +115,11 @@ function closeAllWindows(){
 			chrome.windows.remove(windows[i].id);
 		}
 	});
+}
+
+function updateIcon(){
+	if (localStorage["openedWorkspace"] == undefined)
+		chrome.browserAction.setIcon({path: "inactive.png"});
+	else
+		chrome.browserAction.setIcon({path: "active.png"});
 }

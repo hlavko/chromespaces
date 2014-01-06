@@ -10,9 +10,29 @@ $(function() {
 	chrome.tabs.onRemoved.addListener(function(tabId, removeInfo){
 		saveCurrentWorkspace();
 	});
+
+	chrome.windows.onCreated.addListener(function(window){
+		saveCurrentWorkspace();
+	});
+
+	chrome.windows.onRemoved.addListener(function(windowId){
+		saveCurrentWorkspace();
+	});
+
+	chrome.runtime.onMessage.addListener(
+	  function(request, sender, sendResponse) {
+	    if (request.type == "save"){
+	      saveCurrentWorkspace();
+	      return true;
+	    }
+	});
+
+	updateIcon();
 });
 
 function saveCurrentWorkspace(){
+	updateIcon();
+
 	if (localStorage["openedWorkspace"] == undefined)
 		return;
 
@@ -27,4 +47,11 @@ function saveCurrentWorkspace(){
 
 		localStorage["workspace_" + currentWorkspaceName] = JSON.stringify(openedTabsUrls);
 	});
+}
+
+function updateIcon(){
+	if (localStorage["openedWorkspace"] == undefined)
+		chrome.browserAction.setIcon({path: "inactive.png"});
+	else
+		chrome.browserAction.setIcon({path: "active.png"});
 }
