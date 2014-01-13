@@ -4,13 +4,7 @@ body {
 	background: #aadfeb;
 }
 
-/* TABS */
-
-.tabs input[type=radio] {
-	position: absolute;
-	top: -9999px;
-	left: -9999px;	
-}
+/* LIST-VIEW */
 
 .tabs {
 	width: 350px;
@@ -18,39 +12,42 @@ body {
 	list-style: none;
 	position: relative;
 	padding: 0;
+	margin: 0;
 }
 
 .tabs li{
 	float: left;
 }
 
-.tabs label {
+.tabs .label {
 	display: block;
 	padding: 2px 20px;
 	border-radius: 2px 2px 0 0;
-	color: #08C;
 	font-size: 20px;
 	font-weight: normal;
-	background: rgba(255,255,255,0.2);
 	cursor: pointer;
 	position: relative;
+}
+
+.tabs .opened {
+	background: #08C;
+	color: white;
+}
+
+.tabs .opened:hover {
+}
+
+.tabs .closed {
+	color: #08C;
+	background: rgba(255,255,255,0.2);
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
 
-.tabs label:hover {
+.tabs .closed:hover {
 	background: rgba(255,255,255,0.5);
-}
-
-[id^=tab]:checked + label {
-	background: #08C;
-	color: white;
-}
-
-[id^=tab]:checked ~ [id^=tab-content] {
-	display: block;
 }
 
 .tab-content{
@@ -59,7 +56,6 @@ body {
 	text-align: left;
 	width: 100%;
 	font-size: 20px;
-	line-height: 100%;
 	padding-top: 10px;
 	background: #08C;
 	padding: 15px;
@@ -73,55 +69,79 @@ body {
 	animation-duration: 0.5s;
 }
 
-#tabSave{
-	min-width: 260px;
+/* EDIT-VIEW */
+
+#item-view h2{
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+	font-size: 22px;
 }
 
-#create{
-	text-align: center;
+#item-view{
+	text-align: left;
+	width: 350px;
+	font-size: 20px;
+	background: #08C;
+	padding: 5px 0px 0px 15px;
+	color: white;
+	/*position: relative;
+	left:0;*/
+	box-sizing: border-box;
+	-webkit-animation-duration: 0.5s;
+	-o-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	animation-duration: 0.5s;
 }
 
-#create a{
-	color: #42ADDE;
+#item-view label{
+	font-size: 20px;
 }
 
-#create a:hover{
-	color: #0095B6;
+#item-view input[type=text]{
+	padding: 4px;
+	border: 1px solid #CCCCCC;
+	width: 200px;
+}
+			
+#item-view input:focus{
+	border: 1px solid #FFFFFF;
+	background: #eee;
 }
 
-.opened{
-	font-weight: bold;
+.buttons input[type=radio] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
 }
 
-#list {
-	border: 1px solid #cccccc;
-	border-collapse:collapse
+.buttons {
+	list-style: none;
+	/*position: relative;*/
+	padding: 0;
 }
 
-.opened {
-	background-color: #98FB98;
+.buttons li{
+	float: left;
+	margin-right: 5px;
 }
 
-#list th{
-	background: #e0e0e0;
-	font-weight: bold;
-	text-align:center;
-	overflow: visible;
-	padding: 3px 3px;
+.buttons .label {
+	display: block;
+	padding: 1px 20px;
+	border-radius: 2px 2px 2px 2px;
+	color: #08C;
 	font-size: 16px;
+	font-weight: normal;
+	background: rgba(255,255,255,0.9);
+	cursor: pointer;
+	/*position: relative;*/
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
-#list td{
-	text-align:center;
-	overflow: visible;
-	padding: 3px 3px;
-	font-size: 14px;
-}
-
-#list td a{
-	color: #42ADDE;
-}
-
-#list td a:hover{
-	color: #0095B6;
+.buttons .label:hover {
+	background: #aadfeb;
+	color: #059;
 }

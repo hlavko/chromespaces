@@ -5,17 +5,28 @@ var ListController = Controller.extend({
 
 		this.toggle(true);
 		this.showRecent();
+
+		$("#recent-button").bind('click', {controller: this}, function(event){
+			event.data.controller.showRecent();
+		});
+
+		$("#all-button").bind('click', {controller: this}, function(event){
+			event.data.controller.showAll();
+		});
 	},
 
 	add: function(){
+		// generate ws id
+		var wsId = this._repo.generateWsId();
+
 		// create new workspace
-		var ws = new Workspace(this._repo.generateWsId(), "", [], 0, 0);
+		var ws = new Workspace(wsId, "workspace" + wsId, [], 0, 0);
 
 		// hide list view
 		this.toggle(false);
 
 		// create controller for clicked ws
-		new ItemController(this._repo, ws);
+		new ItemController(this._repo, ws, this);
 	},
 
 	closeAllWindows: function(){
@@ -35,7 +46,7 @@ var ListController = Controller.extend({
 		this.toggle(false);
 
 		// create controller for clicked ws
-		new ItemController(_repo, ws);
+		new ItemController(_repo, ws, this);
 	},
 
 	open: function(){
@@ -43,10 +54,22 @@ var ListController = Controller.extend({
 	},
 
 	showAll: function(){
-
+		$("#recent-button .label").addClass("closed");
+		$("#recent-button .label").removeClass("opened");
+		$("#all-button .label").addClass("opened");
+		$("#all-button .label").removeClass("closed");
+		$("#tab-content1").hide();
+		$("#tab-content2").show();
 	},
 
 	showRecent: function(){
+		$("#recent-button .label").addClass("opened");
+		$("#recent-button .label").removeClass("closed");
+		$("#all-button .label").addClass("closed");
+		$("#all-button .label").removeClass("opened");
+		$("#tab-content2").hide();
+		$("#tab-content1").show();
+
 		// prepare table
 		var table = $("#list-recent tbody");
 

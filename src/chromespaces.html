@@ -16,18 +16,16 @@
   <body>
     <div id="list-view">
       <ul class="tabs">
-        <li>
-          <input type="radio" checked name="tabs" id="tab1">
-          <label for="tab1">Recent</label>
+        <li id="recent-button">
+          <div class="label">Recent</div>
           <div id="tab-content1" class="tab-content animated fadeIn">
             <table id="list-recent">
               <tbody></tbody>
             </table>
           </div>
         </li>
-        <li>
-          <input type="radio" name="tabs" id="tab2">
-          <label for="tab2">All</label>
+        <li id="all-button">
+          <div class="label">All</div>
           <div id="tab-content2" class="tab-content animated fadeIn">
             <table id="list-all">
               <tbody></tbody>
@@ -37,8 +35,20 @@
       </ul>
     </div>
     <div id="item-view">
-    gdafoghaog
+      <h2>Create Workspace</h2>
+      <label>Name:
+        <input type="text" id="ws-name" value="Workspace">
+      </label>
+      <ul class="buttons">
+        <li id="add-button">
+          <div class="label">Add</div>
+        </li>
+        <li id="cancel-button">
+          <div class="label">Cancel</div>
+        </li>
+      </ul>
+      <br>
+      <br>
     </div>
-
   </body>
 </html>
