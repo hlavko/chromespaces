@@ -4,20 +4,13 @@ var ListController = Controller.extend({
 		this._super(repo, $("#list-view"));
 
 		this.toggle(true);
-		this.showRecent();
-
-		$("#recent-button").bind('click', {controller: this}, function(event){
-			event.data.controller.showRecent();
-		});
-
-		$("#all-button").bind('click', {controller: this}, function(event){
-			event.data.controller.showAll();
-		});
+		this.prepare();
+		this.update("all");
 	},
 
 	add: function(){
 		// generate ws id
-		var wsId = this._repo.generateWsId();
+		var wsId = this._repo.settings.generateId();
 
 		// create new workspace
 		var ws = new Workspace(wsId, "workspace" + wsId, [], 0, 0);
@@ -27,6 +20,19 @@ var ListController = Controller.extend({
 
 		// create controller for clicked ws
 		new ItemController(this._repo, ws, this);
+	},
+
+	close: function(ws){
+		// unattach current ws
+		this._repo.close();
+
+		// close all windows
+		this.closeAllWindows();
+
+		// open empty window
+		chrome.windows.create({});
+
+		this.update();
 	},
 
 	closeAllWindows: function(){
@@ -46,48 +52,85 @@ var ListController = Controller.extend({
 		this.toggle(false);
 
 		// create controller for clicked ws
-		new ItemController(_repo, ws, this);
+		new ItemController(this._repo, ws, this);
 	},
 
-	open: function(){
+	open: function(ws){
+		// change current ws
+		this._repo.open(ws);
 
+		// close all windows
+		this.closeAllWindows();
+
+		// open window with ws tabs
+		chrome.windows.create({"url":ws.tabs});
+
+		this.update();
 	},
 
-	showAll: function(){
-		$("#recent-button .label").addClass("closed");
-		$("#recent-button .label").removeClass("opened");
-		$("#all-button .label").addClass("opened");
-		$("#all-button .label").removeClass("closed");
-		$("#tab-content1").hide();
-		$("#tab-content2").show();
+	prepare: function(){
+		$("#recent-button").bind('click', {controller: this}, function(event){
+			event.data.controller.update("recent");
+		});
+
+		$("#all-button").bind('click', {controller: this}, function(event){
+			event.data.controller.update("all");
+		});
+
+		$("#add-workspace").bind('click', {controller: this}, function(event){
+			event.data.controller.add();
+		});
 	},
 
-	showRecent: function(){
-		$("#recent-button .label").addClass("opened");
-		$("#recent-button .label").removeClass("closed");
-		$("#all-button .label").addClass("closed");
-		$("#all-button .label").removeClass("opened");
-		$("#tab-content2").hide();
-		$("#tab-content1").show();
-
-		// prepare table
-		var table = $("#list-recent tbody");
-
+	show: function(state){
+		var table = $("#list tbody");
 		// dispose current list content
 		table.html('');
+
+		if (this._repo.all.length == 0){
+			$(".tabs").hide();
+			return;
+		}
+		else{
+			$(".tabs").show();
+		}
+
+		if (state == "all"){
+
+			// sort by name
+			this._repo.all.sort(function(a, b){
+				var aName = a.name.toLowerCase();
+				var bName = b.name.toLowerCase(); 
+				return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+			});
+		}
+		else if (state == "recent"){
+
+			// sort by recently opened
+			this._repo.all.sort(function(a, b){
+				var aLast = a.last;
+				var bLast = b.last; 
+				return ((aLast > bLast) ? -1 : ((aLast < bLast) ? 1 : 0));
+			});
+		}
 
 		// fill table with workspaces
 		var ws;
 		for (var i=0; i < this._repo.all.length; i++){
 			ws = this._repo.all[i];
 
-			var row = $("<tr id='" + ws.id + "'></tr>").click(function(){
+			var row = $("<tr id='" + ws.id + "'></tr>");
+
+			if (this._repo.isCurrent(ws))
+				row.addClass("active")
+
+			var colName = $("<td class='name'>" + ws.name +  "</td>").bind('click', {controller: this, repo: this._repo}, function(event){
 				var wsId = $(this).parent().attr("id");
-				toggleWs(wsId);
+				var ws = event.data.repo.findWsById(wsId);
+				event.data.repo.isCurrent(ws) ? event.data.controller.close(ws) : event.data.controller.open(ws);
 			});
 
-			var colName = $("<td>" + ws.name +  "</td>");
-			var colEdit = $("<a href='javascript:void(0)'>edit</a></td>").bind('click', {controller: this}, function(event){
+			var colEdit = $("<td class='edit'><a href='javascript:void(0)'>edit</a></td>").bind('click', {controller: this}, function(event){
 				var wsId = $(this).parent().attr("id");
 				event.data.controller.edit(wsId);
 			});
@@ -98,40 +141,29 @@ var ListController = Controller.extend({
 			table.append(row);
 		}
 
-		// add new ws option to the table
-		var row = $("<tr><td>Add Workspace...</td></tr>").bind('click', {controller: this}, function(event){
-			event.data.controller.add();
-		});
-		
 		table.append(row);
 	},
 
-	toggleWs: function(wsId){
-		// close ws
-		if (wsId == _repo.current.id){
-			// unattach current ws
-			_repo.current = null;
+	update: function(state){
+		if (!state)
+			state = this._state;
+		else
+			this._state = state;
 
-			// close all windows
-			this.closeAllWindows();
-
-			// open empty window
-			chrome.windows.create({});
+		if (state == "all"){
+			$("#recent-button .label").addClass("closed");
+			$("#recent-button .label").removeClass("opened");
+			$("#all-button .label").addClass("opened");
+			$("#all-button .label").removeClass("closed");
 		}
-		// open ws
-		else{
-			// find clicked ws by id
-			var ws = this._repo.findWsById(wsId);
-
-			// change current ws
-			_repo.current = ws;
-
-			// close all windows
-			this.closeAllWindows();
-
-			// open window with ws tabs
-			chrome.windows.create({"url":ws.tabs});
+		else if (state == "recent"){
+			$("#recent-button .label").addClass("opened");
+			$("#recent-button .label").removeClass("closed");
+			$("#all-button .label").addClass("closed");
+			$("#all-button .label").removeClass("opened");
 		}
+
+		this.show(state);
 	}
 
 });

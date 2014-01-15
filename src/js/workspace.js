@@ -8,8 +8,13 @@ var Workspace = Class.extend({
 		this.timesOpened = timesOpened;
 	},
 
+	addTabs: function(tabs){
+		this.tabs = tabs;
+	},
+
 	open: function(){
-		timesOpened += 1;
+		this.timesOpened += 1;
+		this.last = new Date();
 	},
 
 	close: function(){

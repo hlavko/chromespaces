@@ -9,6 +9,7 @@
     <script src="js/workspace.js"></script>
     <script src="js/repo.js"></script>
     <script src="js/gateway.js"></script>
+    <script src="js/settings.js"></script>
     <script src="js/controller.js"></script>
     <script src="js/listcontroller.js"></script>
     <script src="js/itemcontroller.js"></script>
@@ -16,39 +17,59 @@
   <body>
     <div id="list-view">
       <ul class="tabs">
-        <li id="recent-button">
-          <div class="label">Recent</div>
-          <div id="tab-content1" class="tab-content animated fadeIn">
-            <table id="list-recent">
-              <tbody></tbody>
-            </table>
-          </div>
-        </li>
-        <li id="all-button">
-          <div class="label">All</div>
-          <div id="tab-content2" class="tab-content animated fadeIn">
-            <table id="list-all">
-              <tbody></tbody>
-            </table>
-          </div>
-        </li>
+        <li id="all-button"><div class="label">All</div></li>
+        <li id="recent-button"><div class="label">Recent</div></li>
       </ul>
+      <div id="list">
+        <table id="table">
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id='add-workspace'><a hred="javascript:void(0)">add workspace</a></div>
     </div>
     <div id="item-view">
-      <h2>Create Workspace</h2>
-      <label>Name:
-        <input type="text" id="ws-name" value="Workspace">
-      </label>
+      <h2>Workspace Settings</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" id="ws-name"></td>
+          </tr>
+          <tr id="info-tabs">
+            <td>Tabs:</td>
+            <td></td>
+          </tr>
+          <tr id="info-last">
+            <td>Last Open:</td>
+            <td></td>
+          </tr>
+          <tr id="info-times">
+            <td>Opens:</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
       <ul class="buttons">
         <li id="add-button">
-          <div class="label">Add</div>
+          <div class="label">add</div>
+        </li>
+        <li id="save-button">
+          <div class="label">save</div>
+        </li>
+        <li id="open-button">
+          <div class="label">open</div>
+        </li>
+        <li id="close-button">
+          <div class="label">close</div>
+        </li>
+        <li id="remove-button">
+          <div class="label">remove</div>
         </li>
         <li id="cancel-button">
-          <div class="label">Cancel</div>
+          <div class="label">cancel</div>
         </li>
       </ul>
-      <br>
-      <br>
+      <div id="item-footer"></div>
     </div>
   </body>
 </html>

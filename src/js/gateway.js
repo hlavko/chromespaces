@@ -18,14 +18,14 @@ var Gateway = Class.extend({
 
 			// load all workspaces
 			var wsConfig;
-			for (var key in repo.workspaces){
-				wsConfig = repo.workspace[key];
+			for (var key in config.ws){
+				wsConfig = config.ws[key];
 				repo.all.push(
 					new Workspace(
 						wsConfig.id, 
 						wsConfig.name, 
 						wsConfig.tabs, 
-						wsConfig.last, 
+						new Date(wsConfig.last), 
 						wsConfig.timesOpened
 					)
 				);
@@ -33,11 +33,16 @@ var Gateway = Class.extend({
 
 			// load current workspace
 			repo.current = config.current;
+
+			// load settings
+			repo.settings.lastId = config.settings.lastId;
 		}
 	},
 
 	save: function(repo){
 		var config = {};
+		config.ws = {};
+		config.settings = {};
 
 		// save all workspaces
 		var ws;
@@ -50,10 +55,15 @@ var Gateway = Class.extend({
 			wsConfig.tabs = ws.tabs;
 			wsConfig.last = ws.last;
 			wsConfig.timesOpened = ws.timesOpened;
+
+			config.ws[wsConfig.id] = wsConfig;
 		}
 
 		// save current workspace
 		config.current = repo.current;
+
+		// save settings
+		config.settings.lastId = repo.settings.lastId;
 
 		// save config to storage
 		localStorage.setItem(this._storageId, JSON.stringify(config));

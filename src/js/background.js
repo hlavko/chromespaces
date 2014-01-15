@@ -1,4 +1,8 @@
+var repo;
+
 $(function() {
+	repo = new Repo();
+
 	chrome.tabs.onCreated.addListener(function(tab){
 		saveCurrentWorkspace();
 	});
@@ -20,12 +24,14 @@ $(function() {
 		saveCurrentWorkspace();
 	});
 
-	chrome.runtime.onMessage.addListener(
-	  function(request, sender, sendResponse) {
-	    if (request.type == "save"){
-	      saveCurrentWorkspace();
-	      return true;
-	    }
+	chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
+		if (request.type == "save"){
+			saveCurrentWorkspace();
+			return true;
+		}
+		else if(request.type == "load"){
+			sendResponse({repo: repo});
+		}
 	});
 
 	updateIcon();
@@ -34,25 +40,30 @@ $(function() {
 function saveCurrentWorkspace(){
 	updateIcon();
 
-	if (localStorage["openedWorkspace"] == undefined)
+	if (!repo.current)
 		return;
 
-	var currentWorkspaceName = localStorage["openedWorkspace"];
-
-	var openedTabsUrls = [];
-
 	chrome.tabs.query({}, function(tabs){
-		for (var i = 0; i < tabs.length; i++){
-			openedTabsUrls.push(tabs[i].url);
-		}
+		repo.current.tabs = [];
 
-		localStorage["workspace_" + currentWorkspaceName] = JSON.stringify(openedTabsUrls);
+		for (var i = 0; i < tabs.length; i++)
+			repo.current.tabs.push(tabs[i].url);
+		
+		repo.save();
 	});
 }
 
 function updateIcon(){
-	if (localStorage["openedWorkspace"] == undefined)
-		chrome.browserAction.setIcon({path: "inactive.png"});
-	else
-		chrome.browserAction.setIcon({path: "active.png"});
+	if (repo.current){
+		chrome.browserAction.setBadgeText({text: repo.current.name.charAt(0).toUpperCase()});
+		chrome.browserAction.setBadgeBackgroundColor({color : "#dd4b39"});
+		chrome.browserAction.setIcon({path: "images/active.png"});
+	}
+	else{
+		chrome.browserAction.setBadgeText({text: ""});
+		chrome.browserAction.setBadgeBackgroundColor({color : [0,0,0,0]});
+		chrome.browserAction.setIcon({path: "images/inactive.png"});
+	}
+
+	
 }
