@@ -45,18 +45,19 @@ var ItemController = Controller.extend({
 	},
 
 	prepare: function(){
-		$("#add-button").hide();
-		$("#save-button").hide();
-		$("#open-button").hide();
-		$("#close-button").hide();
-		$("#remove-button").hide();
+		$("#add-button").hide().unbind();
+		$("#save-button").hide().unbind();
+		$("#open-button").hide().unbind();
+		$("#close-button").hide().unbind();
+		$("#remove-button").hide().unbind();
 
-		$("#info-tabs").show();
-		$("#info-last").show();
-		$("#info-times").show();
+		$("#info-tabs").show().unbind();
+		$("#info-last").show().unbind();
+		$("#info-times").show().unbind();
 
 		// set workspace name to input
 		$("#ws-name").val(this._ws.name);
+		$("#ws-name").focus().unbind();
 
 		// add listeners
 		if (this._ws.timesOpened > 0){
@@ -65,6 +66,11 @@ var ItemController = Controller.extend({
 
 			$("#save-button").bind('click', {controller: this}, function(event){
 				event.data.controller.save();
+			});
+
+			$("#ws-name").bind('keypress', {controller: this}, function(event){
+				if (event.which == 13)
+					event.data.controller.save();
 			});
 
 			$("#remove-button").bind('click', {controller: this}, function(event){
@@ -103,6 +109,11 @@ var ItemController = Controller.extend({
 
 			$("#add-button").bind('click', {controller: this}, function(event){
 				event.data.controller.add();
+			});
+
+			$("#ws-name").bind('keypress', {controller: this}, function(event){
+				if (event.which == 13)
+					event.data.controller.add();
 			});
 		}
 
