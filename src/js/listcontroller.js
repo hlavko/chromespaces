@@ -1,15 +1,32 @@
+/**
+ * List view controller handle workspace listings with fundamental app management.
+ * @param  {Repo} 	_repo			application repository
+ * @param  {string} _state			current workspace listing (allowed: 'all', 'recent')
+ */
 var ListController = Controller.extend({
 
+	/**
+	 * Constructor.
+	 * @param  {Repo} 	repo 		application repository
+	 */
 	init: function(repo){
 		this._super(repo, $("#list-view"));
 
+		// toggle visibility 'on'
 		this.toggle(true);
+
+		// prepare view
 		this.prepare();
+
+		// set 'all' listings as default
 		this.update("all");
 	},
 
+	/**
+	 * Create new workspace and opened proper view.
+	 */
 	add: function(){
-		// generate ws id
+		// generate ws id with settings unique generator
 		var wsId = this._repo.settings.generateId();
 
 		// create new workspace
@@ -18,10 +35,14 @@ var ListController = Controller.extend({
 		// hide list view
 		this.toggle(false);
 
-		// create controller for clicked ws
+		// and to switch to new create controller for clicked ws
 		new ItemController(this._repo, ws, this);
 	},
 
+	/**
+	 * Close provided workspace.
+	 * @param  {Workspace} ws 				workspace object
+	 */
 	close: function(ws){
 		// unattach current ws
 		this._repo.close();
@@ -35,6 +56,9 @@ var ListController = Controller.extend({
 		this.update();
 	},
 
+	/**
+	 * Close all opened windows (with all opened tabs).
+	 */
 	closeAllWindows: function(){
 		// close all windows
 		chrome.windows.getAll({},function(windows){
@@ -44,17 +68,25 @@ var ListController = Controller.extend({
 		});
 	},
 
+	/**
+	 * Edit workspace with provided workspace identificator
+	 * @param  {string} wsId 			workspace identificator
+	 */
 	edit: function(wsId){
-		// find clicked ws by id
+		// find ws by id
 		var ws = this._repo.findWsById(wsId);
 
 		// hide list view
 		this.toggle(false);
 
-		// create controller for clicked ws
+		// create controller for provided ws
 		new ItemController(this._repo, ws, this);
 	},
 
+	/**
+	 * Open provided workspace.
+	 * @param  {Workspace} ws 			workspace object
+	 */
 	open: function(ws){
 		// change current ws
 		this._repo.open(ws);
@@ -68,6 +100,9 @@ var ListController = Controller.extend({
 		this.update();
 	},
 
+	/**
+	 * Attach view listeners for basic actions. 
+	 */
 	prepare: function(){
 		$("#recent-button").bind('click', {controller: this}, function(event){
 			event.data.controller.update("recent");
@@ -82,12 +117,18 @@ var ListController = Controller.extend({
 		});
 	},
 
+	/**
+	 * Show workspace list based on provided listing.
+	 * @param  {string} state 			workspace listing keyword
+	 */
 	show: function(state){
 		var table = $("#list tbody");
+
 		// dispose current list content
 		table.html('');
 
 		if (this._repo.all.length == 0){
+			// dont show table if there are no workspaces
 			$(".tabs").hide();
 			return;
 		}
@@ -96,7 +137,6 @@ var ListController = Controller.extend({
 		}
 
 		if (state == "all"){
-
 			// sort by name
 			this._repo.all.sort(function(a, b){
 				var aName = a.name.toLowerCase();
@@ -105,7 +145,6 @@ var ListController = Controller.extend({
 			});
 		}
 		else if (state == "recent"){
-
 			// sort by recently opened
 			this._repo.all.sort(function(a, b){
 				var aLast = a.last;
@@ -115,6 +154,7 @@ var ListController = Controller.extend({
 		}
 
 		// fill table with workspaces
+		// and attach proper listeners
 		var ws;
 		for (var i=0; i < this._repo.all.length; i++){
 			ws = this._repo.all[i];
@@ -144,6 +184,10 @@ var ListController = Controller.extend({
 		table.append(row);
 	},
 
+	/**
+	 * Update tabs based on active workspace listing.
+	 * @param  {string} state 				workspace listing
+	 */
 	update: function(state){
 		if (!state)
 			state = this._state;

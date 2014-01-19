@@ -1,5 +1,16 @@
+/**
+ * Workspace item view controller manages fundamental workspace-based actions.
+ * @param  {Workspace} 		_ws 					workspace which is representing by this item
+ * @param  {ListController} _list 					list controller back reference
+ */
 var ItemController = Controller.extend({
 
+	/**
+	 * Constructor.
+	 * @param  {Repo} 			repo 		application repository
+	 * @param  {Workspace} 		ws 			workspace which is representing by this item
+	 * @param  {ListController} list 		list controller back reference
+	 */
 	init: function(repo, ws, list){
 		this._super(repo, $("#item-view"));
 		this._ws = ws;
@@ -9,6 +20,9 @@ var ItemController = Controller.extend({
 		this.prepare();
 	},
 
+	/**
+	 * Add this workspace item to the application data.
+	 */
 	add: function(){
 		this._ws.name = $("#ws-name").val();
 		this._repo.add(this._ws);
@@ -18,6 +32,9 @@ var ItemController = Controller.extend({
 		this.cancel();
 	},
 
+	/**
+	 * Cancel without save editing of this item.
+	 */
 	cancel: function(){
 		this.toggle(false);
 		this._list.update();
@@ -25,11 +42,17 @@ var ItemController = Controller.extend({
 		this.dispose();
 	},
 
+	/**
+	 * Close this workspace.
+	 */
 	close: function(){
 		this._list.close(this._ws);
 		this.cancel();
 	},
 
+	/**
+	 * Dispose all bindings.
+	 */
 	dispose: function(){
 		$("#save-button").unbind('click');
 		$("#remove-button").unbind('click');
@@ -39,18 +62,24 @@ var ItemController = Controller.extend({
 		$("#cancel-button").unbind('click');
 	},
 
+	/**
+	 * Open this workspace.
+	 */
 	open: function(){
 		this._list.open(this._ws);
 		this.cancel();
 	},
 
+	/**
+	 * Attach listeners and prepare item display.
+	 */
 	prepare: function(){
+		// unbind everything and prepare visibility
 		$("#add-button").hide().unbind();
 		$("#save-button").hide().unbind();
 		$("#open-button").hide().unbind();
 		$("#close-button").hide().unbind();
 		$("#remove-button").hide().unbind();
-
 		$("#info-tabs").show().unbind();
 		$("#info-last").show().unbind();
 		$("#info-times").show().unbind();
@@ -59,8 +88,9 @@ var ItemController = Controller.extend({
 		$("#ws-name").val(this._ws.name);
 		$("#ws-name").focus().unbind();
 
-		// add listeners
+		// prepare visual and bindings of workspace
 		if (this._ws.timesOpened > 0){
+			// workspace is fully controllable because it is already stored in the application data
 			$("#save-button").show();
 			$("#remove-button").show();
 
@@ -77,6 +107,7 @@ var ItemController = Controller.extend({
 				event.data.controller.remove();
 			});
 
+			// set open/close visual based on current workspace state
 			if (this._repo.isCurrent(this._ws)){
 				$("#close-button").show();
 
@@ -101,6 +132,7 @@ var ItemController = Controller.extend({
 			$("#info-times td:eq(1)").text(this._ws.timesOpened);
 		}
 		else{
+			// prepare save form of new workspace (because it is not saved in application data yet)
 			$("#info-tabs").hide();
 			$("#info-last").hide();
 			$("#info-times").hide();
@@ -122,6 +154,9 @@ var ItemController = Controller.extend({
 		});
 	},
 
+	/**
+	 * Remove workspace from application.
+	 */
 	remove: function(){
 		if (this._repo.isCurrent(this._ws))
 			this._list.close(this._ws);
@@ -133,6 +168,9 @@ var ItemController = Controller.extend({
  		this.cancel();
 	},
 
+	/**
+	 * Save changed data of workspace.
+	 */
 	save: function(){
 		this._ws.name = $("#ws-name").val();
 		this._repo.save();
