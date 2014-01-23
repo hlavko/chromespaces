@@ -117,7 +117,6 @@ body {
 #add-workspace{
 	margin-top: 10px;
 	text-align: center;
-	width: 100px;
 }
 
 /* EDIT-VIEW */
@@ -186,7 +185,6 @@ body {
 
 #item-view table{
 	border-collapse:collapse;
-	width: 100%;
 }
 
 #item-view tr{
@@ -195,12 +193,19 @@ body {
 }
 
 #item-view td:nth-child(1){
-	width: 200px;
 }
 
 #item-view td:nth-child(2){
 	text-align:center;
-	width: 100px;
+}
+
+#item-view .tab-url td{
+	font-size: 11px;
+	overflow:hidden;
+	max-width: 300px;
+	height: 15px;
+	white-space:pre;
+	word-wrap: break-word;
 }
 
 #item-footer{

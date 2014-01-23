@@ -83,6 +83,7 @@ var ItemController = Controller.extend({
 		$("#info-tabs").show().unbind();
 		$("#info-last").show().unbind();
 		$("#info-times").show().unbind();
+		$("#item-view table tbody .tab-url").remove();
 
 		// set workspace name to input
 		$("#ws-name").val(this._ws.name);
@@ -123,13 +124,18 @@ var ItemController = Controller.extend({
 				});
 			}
 
-			$("#info-tabs td:eq(1)").text(this._ws.tabs.length);
-
 			var date = this._ws.last;
 			var formattedDate = date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes();
 			$("#info-last td:eq(1)").text(formattedDate);
 			
 			$("#info-times td:eq(1)").text(this._ws.timesOpened);
+
+			$("#info-tabs td:eq(1)").text(this._ws.tabs.length);
+
+			var tBody = $("#item-view table tbody");
+			for (var i = 0; i < this._ws.tabs.length; i++){
+				tBody.append('<tr class="tab-url"><td colspan="2">' + this._ws.tabs[i] + '</td></tr>');
+			}
 		}
 		else{
 			// prepare save form of new workspace (because it is not saved in application data yet)

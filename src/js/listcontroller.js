@@ -170,7 +170,7 @@ var ListController = Controller.extend({
 				event.data.repo.isCurrent(ws) ? event.data.controller.close(ws) : event.data.controller.open(ws);
 			});
 
-			var colEdit = $("<td class='edit'><a href='javascript:void(0)'>edit</a></td>").bind('click', {controller: this}, function(event){
+			var colEdit = $("<td class='edit'><a href='javascript:void(0)'>more</a></td>").bind('click', {controller: this}, function(event){
 				var wsId = $(this).parent().attr("id");
 				event.data.controller.edit(wsId);
 			});
