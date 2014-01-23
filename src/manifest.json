@@ -3,7 +3,7 @@
 
   "name": "Chromespaces",
   "description": "Tab-based workspaces for Google Chrome™",
-  "version": "0.2",
+  "version": "0.3",
   "author": "hmark.eu",
 
   "permissions": [
