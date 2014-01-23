@@ -30,6 +30,8 @@ var ItemController = Controller.extend({
 		chrome.runtime.sendMessage({type: "save"});
 
 		this.cancel();
+		
+		window._gaq.push(['_trackEvent', 'add workspace', 'click']);
 	},
 
 	/**
@@ -172,6 +174,8 @@ var ItemController = Controller.extend({
  		chrome.runtime.sendMessage({type: "save"});
 
  		this.cancel();
+
+ 		window._gaq.push(['_trackEvent', 'remove workspace', 'click']);
 	},
 
 	/**
@@ -181,6 +185,6 @@ var ItemController = Controller.extend({
 		this._ws.name = $("#ws-name").val();
 		this._repo.save();
 		this.cancel();
-	}
+	},
 
 });

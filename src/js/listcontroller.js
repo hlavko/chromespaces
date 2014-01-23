@@ -2,14 +2,16 @@
  * List view controller handle workspace listings with fundamental app management.
  * @param  {Repo} 	_repo			application repository
  * @param  {string} _state			current workspace listing (allowed: 'all', 'recent')
+ * @param  {object} _gap			GA tracking object
  */
 var ListController = Controller.extend({
 
 	/**
 	 * Constructor.
 	 * @param  {Repo} 	repo 		application repository
+	 * @param  {object} gap 		GA tracking object
 	 */
-	init: function(repo){
+	init: function(repo, gap){
 		this._super(repo, $("#list-view"));
 
 		// toggle visibility 'on'
@@ -54,6 +56,8 @@ var ListController = Controller.extend({
 		chrome.windows.create({});
 
 		this.update();
+
+		window._gaq.push(['_trackEvent', 'close workspace', 'click']);
 	},
 
 	/**
@@ -98,6 +102,8 @@ var ListController = Controller.extend({
 		chrome.windows.create({"url":ws.tabs});
 
 		this.update();
+
+		window._gaq.push(['_trackEvent', 'open workspace', 'click']);
 	},
 
 	/**
