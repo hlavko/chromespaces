@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Chromespaces",
-  "description": "Tab-based workspaces for Google Chrome™",
-  "version": "0.3",
+  "description": "Manage your tabs in workspaces and switch between them as you want.",
+  "version": "0.3.2",
   "author": "hmark.eu",
 
   "permissions": [

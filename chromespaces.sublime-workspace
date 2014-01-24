@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"Tracke",
+				"tracker"
+			],
+			[
+				"trac",
+				"trackEvent"
+			],
+			[
 				"ud",
 				"updateIcon"
 			],
@@ -211,43 +219,11 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/js/workspace.js",
-			"settings":
-			{
-				"buffer_size": 1012,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/js/itemcontroller.js",
-			"settings":
-			{
-				"buffer_size": 4417,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/manifest.json",
-			"settings":
-			{
-				"buffer_size": 464,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/js/listcontroller.js",
-			"settings":
-			{
-				"buffer_size": 5035,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 160.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
@@ -360,19 +336,23 @@
 	},
 	"file_history":
 	[
-		"/C/hlavko/downloads/movies/action,anime-scifi-fantasy,drama,krimi-thriller,horror-mystery.",
+		"/C/hlavko/workspace/lula/trunk4/src/flash/skeleton_anims_designer/bin/config.xml",
+		"/C/Users/hlavko/Desktop/Log.xml",
+		"/C/hlavko/workspace/lula/trunk4/src/flash/Lula/staticdata_duplicator.py",
+		"/C/hlavko/workspace/chromespaces/src/manifest.json",
 		"/C/hlavko/workspace/chromespaces/src/js/listcontroller.js",
-		"/C/hlavko/workspace/chromespaces/src/js/controller.js",
+		"/C/hlavko/workspace/chromespaces/src/chromespaces.html",
 		"/C/hlavko/workspace/chromespaces/src/js/background.js",
 		"/C/hlavko/workspace/chromespaces/src/js/app.js",
+		"/C/hlavko/workspace/chromespaces/src/js/itemcontroller.js",
+		"/C/hlavko/workspace/chromespaces/src/js/tracker.js",
+		"/C/hlavko/workspace/chromespaces/src/js/workspace.js",
+		"/C/hlavko/workspace/chromespaces/src/css/style.css",
+		"/C/hlavko/downloads/movies/action,anime-scifi-fantasy,drama,krimi-thriller,horror-mystery.",
+		"/C/hlavko/workspace/chromespaces/src/js/controller.js",
 		"/C/hlavko/workspace/chromespaces/src/js/repo.js",
 		"/C/hlavko/workspace/chromespaces/src/js/gateway.js",
-		"/C/hlavko/workspace/chromespaces/src/js/workspace.js",
 		"/C/hlavko/workspace/chromespaces/src/js/settings.js",
-		"/C/hlavko/workspace/chromespaces/src/js/itemcontroller.js",
-		"/C/hlavko/workspace/chromespaces/src/manifest.json",
-		"/C/hlavko/workspace/chromespaces/src/chromespaces.html",
-		"/C/hlavko/workspace/chromespaces/src/css/style.css",
 		"/C/hlavko/workspace/chromespaces/v1/chromespaces.js",
 		"/C/hlavko/workspace/chromespaces/src/js/mediator.js",
 		"/C/hlavko/wants.txt",
@@ -483,11 +463,7 @@
 		"/C/hlavko/workspace/plavba/plavby/wp-content/plugins/wp-katalog/katalog.php",
 		"/C/Users/hlavko/Desktop/442272 Code Downloads/Chapter 8 Code/prowp2-settings-api-plugin.php",
 		"/C/Users/hlavko/Desktop/442272 Code Downloads/Chapter 8 Code/uninstall.php",
-		"/C/Users/hlavko/Desktop/442272 Code Downloads/Chapter 8 Code/halloween-store.php",
-		"/C/Users/hlavko/Desktop/442272 Code Downloads/Code README.txt",
-		"/E/learn/wordpress_docs.txt",
-		"/C/hlavko/workspace/plavba/plavby/wp-content/plugins/wp-catalogue/themefiles/taxonomy-wpccategories.php",
-		"/C/wamp/www/plavby/wp-content/plugins/wp-catalogue/wpc-catalogue.php"
+		"/C/Users/hlavko/Desktop/442272 Code Downloads/Chapter 8 Code/halloween-store.php"
 	],
 	"find":
 	{
@@ -506,6 +482,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"staffmodel28",
+			"console.log",
+			"tracker",
+			"width",
+			"edit",
 			"update(",
 			"chrome",
 			"generateWsId",
@@ -628,12 +609,7 @@
 			"<slot id=\"pose7_tattoo_arm1\" type=\"art\" part=\"EMPTY\"/>",
 			"<slot id=\"pose6_botox_mouth3\" type=\"art\" part=\"EMPTY\"/>",
 			"<slot id=\"pose6_botox_mouth2\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose6_botox_mouth1\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose6_pircing_head3\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose6_pircing_head2\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose6_pircing_head1\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose6_tattoo_arm3\" type=\"art\" part=\"EMPTY\"/>",
-			"<slot id=\"pose6_tattoo_arm2\" type=\"art\" part=\"EMPTY\"/>"
+			"<slot id=\"pose6_botox_mouth1\" type=\"art\" part=\"EMPTY\"/>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -779,330 +755,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/js/workspace.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1012,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/js/itemcontroller.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4417,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								382,
-								382
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/manifest.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 464,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								157,
-								157
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/js/listcontroller.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 5035,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								291,
-								336
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
